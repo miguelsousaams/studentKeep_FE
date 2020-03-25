@@ -12,6 +12,8 @@ body {
   min-height: 800px;
 
   white-space: nowrap;
+
+  overflow:hidden
 }
 
 .app {
