@@ -28,36 +28,35 @@
     </script>
   </head>
   <body id="inicio">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="src/svg/icon_arrow_down.svg" class="up_arrow" />
+    </button>
     <div class="app">
       <!-- Header -->
-      <div class="header_bg">
-        <nav class="header navbar_proj navbar-light bg-ligh">
-          <div class="col">
-            <img src="src/svg/logo_studentkeep.svg" class="header_logo" />
-          </div>
-          <div
-            class="col text-right navbar navbar-expand-sm justify-content-end"
+      <nav class="header navbar_proj navbar-light bg-ligh">
+        <div class="col">
+          <img src="src/svg/logo_studentkeep.svg" class="header_logo" />
+        </div>
+        <div class="col text-right navbar navbar-expand-sm justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class=" nav_subTitle" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav_subTitle" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav_subTitle" href="#perguntas">Perguntas</a>
+            </li>
+          </ul>
+          <a
+            class="blue_btn"
+            href="https://forms.gle/cDLMPN9tT6TUfL6DA"
+            target="_blank"
+            >Ajudar!</a
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class=" nav_subTitle" href="#inicio">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class=" nav_subTitle" href="#sobre">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class=" nav_subTitle" href="#perguntas">Perguntas</a>
-              </li>
-            </ul>
-            <a
-              class="blue_btn"
-              href="https://forms.gle/cDLMPN9tT6TUfL6DA"
-              target="_blank"
-              >Ajudar!</a
-            >
-          </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
       <!-- Body -->
       <div class="body">
         <!-- Inicio -->
@@ -105,10 +104,10 @@
           </div>
         </div>
 
-        <img id="sobre"  src="src/svg/vector_wave_bottom.svg" class="bottom_svg" />
+        <img src="src/svg/vector_wave_bottom.svg" class="bottom_svg" />
 
         <!-- Sobre -->
-        <div class="before_sobre">
+        <div id="sobre" class="before_sobre">
           <div class="sobre">
             <span class="title_yellow keep_title">Sobre o projeto</span>
             <hr class="yellow_hr" />
