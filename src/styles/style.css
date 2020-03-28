@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 1280px;
   min-height: 800px;
@@ -118,6 +122,7 @@ body {
   color: #e6e9ed;
   margin: 25px;
   font-size: 15px;
+  transition: all .2s ease-in-out;
 }
 
 .large_btn {
@@ -154,10 +159,15 @@ body {
   -webkit-box-shadow: 0px 0px 12px 2px rgba(183, 183, 183, 1);
   -moz-box-shadow: 0px 0px 12px 2px rgba(183, 183, 183, 1);
   box-shadow: 0px 0px 12px 2px rgba(183, 183, 183, 1);
+
+  transition: all .2s ease-in-out;
+
 }
 
 .large_btn--wrapper:hover {
   transform: scale(1.1);
+  transition: all .2s ease-in-out;
+
 }
 
 .nav_subTitle {
@@ -243,6 +253,8 @@ body {
   box-shadow: 0px 0px 12px 2px rgba(183, 183, 183, 1);
 
   border-radius: 5px;
+  transition: all .2s ease-in-out;
+
 }
 
 .texto_criterios {
@@ -340,11 +352,16 @@ font-size: 24px;
   -webkit-box-shadow: 0px 0px 12px 2px rgba(183, 183, 183, 1);
   -moz-box-shadow: 0px 0px 12px 2px rgba(183, 183, 183, 1);
   box-shadow: 0px 0px 12px 2px rgba(183, 183, 183, 1);
+
+  transition: all .2s ease-in-out;
+
 }
 
 .blue_btn_ctr:hover,
 .green_btn_ctr:hover{
   transform: scale(1.01);
+  transition: all .2s ease-in-out;
+
 }
 
 .left_arrow{
@@ -385,4 +402,11 @@ font-size: 24px;
     background-size: 20%, 30%;
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 15%, 100% 62%;
+}
+
+.termos_body{
+  background-image: url("../svg/vector_blob_termosecondicoes_right.svg");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 100% 75%;
 }

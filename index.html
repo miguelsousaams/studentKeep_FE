@@ -13,6 +13,19 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400|Ubuntu:700&display=swap"
       rel="stylesheet"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4N0Z2DTDPP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4N0Z2DTDPP");
+    </script>
   </head>
   <body>
     <div class="app">
@@ -121,7 +134,7 @@
               </p>
             </div>
 
-            <div class="numeros_total">
+            <div class="numeros_total" style="display: none;">
               Até agora conseguimos ajudar <span class="numero">X</span> alunos
               com <span class="numero">X</span> equipamentos, emprestados por
               <span class="numero">X</span> pessoas. Obrigado.
@@ -208,12 +221,16 @@
           </div>
 
           <div class="col">
-            <a href="" class="side_text">Termos e condições</a>
-            <a href="views/politicaPrivacidade.html" class="side_text">Política de privacidade</a>
+            <a href="views/termosEcondicoes.html" class="side_text"
+              >Termos e condições</a
+            >
+            <a href="views/politicaPrivacidade.html" class="side_text"
+              >Política de privacidade</a
+            >
           </div>
         </div>
       </div>
-
+    </div>
     <script src="src/js/script.js"></script>
   </body>
 </html>
