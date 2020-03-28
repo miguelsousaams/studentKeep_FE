@@ -36,7 +36,8 @@ body {
 }
 
 .navbar_proj {
-  position: relative;
+  position: sticky; 
+  top:0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
