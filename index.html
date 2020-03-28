@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Student Keep -</title>
-    <link rel="shortcut icon" type="image/x-icon"  href="src/icons/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>Student Keep</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="src/icons/favicon.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="src/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/bootstrap.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400|Ubuntu:700&display=swap"
       rel="stylesheet"
@@ -11,20 +16,204 @@
   </head>
   <body>
     <div class="app">
-      <div class="header">
-        <img src="src/svg/logo_studentkeep.svg" class="header_logo" />
-      </div>
+      <!-- Header -->
+      <nav class="header navbar_proj navbar-light bg-ligh">
+        <div class="col">
+          <img src="src/svg/logo_studentkeep.svg" class="header_logo" />
+        </div>
+        <div class="col text-right navbar navbar-expand-sm justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class=" nav_subTitle" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav_subTitle" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav_subTitle" href="#perguntas">Perguntas</a>
+            </li>
+          </ul>
+          <a
+            class="blue_btn"
+            href="https://forms.gle/cDLMPN9tT6TUfL6DA"
+            target="_blank"
+            >Ajudar!</a
+          >
+        </div>
+      </nav>
+      <!-- Body -->
       <div class="body">
-        <span class="title">Página em construção</span>
-        <p class="subTitle">
-          Passa aqui nos próximos dias para saberes mais sobre este projeto e
-          como podes participar.
-        </p>
-        <p class="subTitle">Ate já!</p>
+        <!-- Inicio -->
+        <div class="inicio">
+          <span class="title">Student Keep</span>
+          <p class="subTitle">
+            Tens um computador a mais ou um hotspot de internet que uses em
+            viagem? Ajuda um aluno que não tenham acesso a computador ou
+            internet, emprestando-lhe ...
+          </p>
 
-        <img class="underdev_svg" src="src/svg/illustration_underdev.svg" />
+          <!-- Images recieve or donate-->
+          <div class="donate--receive">
+            <div class="donate">
+              <img
+                class="donate_svg svg "
+                src="src/svg/illustration_donate.svg"
+              />
+              <div class="large_btn--wrapper">
+                <a
+                  class="large_btn donate_btn"
+                  href="https://forms.gle/cDLMPN9tT6TUfL6DA"
+                  target="_blank"
+                  >Quero ajudar</a
+                >
+              </div>
+            </div>
+            <div class="receive">
+              <img
+                class="receive_svg svg"
+                src="src/svg/illustration_receive.svg"
+              />
+              <div class="large_btn--wrapper">
+                <a
+                  class="large_btn receive_btn"
+                  href="https://forms.gle/nVnHSFLBV4766XhKA"
+                  target="_blank"
+                  >Preciso ajuda</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="go_down">
+            <img class="down_arrow svg" src="src/svg/icon_arrow_down.svg" />
+          </div>
+        </div>
+
+        <img src="src/svg/vector_wave_bottom.svg" class="bottom_svg" />
+
+        <!-- Sobre -->
+        <div id="sobre" class="before_sobre">
+          <div class="sobre">
+            <span class="title_yellow keep_title">Sobre o projeto</span>
+            <hr class="yellow_hr" />
+
+            <div class="description">
+              <p class="description--text">
+                Como forma de combater o atual surto de COVID19 em Portugal,
+                todas as escolas foram obrigadas a suspender as suas atividades
+                letivas presenciais, obrigando professores e alunos a adaptar-se
+                a um ensino à distância.
+              </p>
+              <br />
+              <p class="description--text">
+                entanto, nem todos os alunos têm acesso à internet ou a um
+                computador para acompanharem as atividades propostas pelos
+                professores e o ensino à distância é a única forma de ligação
+                entre professores e alunos até que as atividades letivas
+                presenciais sejam restabelecidas.
+              </p>
+              <br />
+              <p class="description--text">
+                É aqui que este projeto entra. Uma pessoa anónima apadrinha um
+                aluno que está em casa mas cuja família não tem recursos para
+                ter um computador ou até internet , empresta um computador extra
+                que tenha,um hotspot de internet e quando as aulas presenciais
+                forem repostas, o material regressa ao dono.
+              </p>
+            </div>
+
+            <div class="numeros_total">
+              Até agora conseguimos ajudar <span class="numero">X</span> alunos
+              com <span class="numero">X</span> equipamentos, emprestados por
+              <span class="numero">X</span> pessoas. Obrigado.
+            </div>
+          </div>
+        </div>
+        <img src="src/svg/vector_wave_top.svg" class="top_svg" />
+
+        <!-- Perguntas -->
+        <div id="perguntas" class="perguntas">
+          <span class="title_yellow">Perguntas</span>
+          <hr class="yellow_hr" />
+
+          <div class="criterio">
+            <div id="pergunta">
+              <div class="pergunta">
+                <span>Como trabalhamos?</span>
+                <div class="texto_criterios hidden" id="pergunta-1">
+                  <p>
+                    1. A sinalização de casos de necessidade;
+                  </p>
+                  <p>
+                    2. A identificação de Keepers, padrinhos, que podem ser
+                    pessoas individuais ou coletivas, que disponibilizam
+                    temporariamente ou permanentemente o equipamento;
+                  </p>
+                  <p>
+                    3. A entrega/empréstimo do material angariado, quer
+                    diretamente quer por intermédio de entidades públicas locais
+                    que assegurem a mediação.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="src/svg/icon_plus.svg"
+                  class="icon_plus"
+                  id="1"
+                  onclick="dropdown(this)"
+                />
+              </div>
+            </div>
+
+            <div>
+              <div class="pergunta">
+                <span>Como participar?</span>
+                <div class="texto_criterios hidden" id="pergunta-2">
+                  <p>
+                    Os Keepers, ou padrinhos, são pessoas individuais ou
+                    coletivas que disponibilizam temporariamente ou
+                    permanentemente o equipamento informático (como PC, tablets,
+                    internet móvel tipicamente usada em viagens) a alunos sem
+                    acesso a estes meios.
+                  </p>
+                  <p>
+                    Torne-se num Keeper preenchendo este rápido
+                    <a
+                      href="https://forms.gle/cDLMPN9tT6TUfL6DA"
+                      target="_blank"
+                      class="link_formulario"
+                      >formulário</a
+                    >.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="src/svg/icon_plus.svg"
+                  class="icon_plus"
+                  id="2"
+                  onclick="dropdown(this)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer"></div>
-    </div>
+      <!-- Footer -->
+      <div class="footer">
+        <div class="navbar_proj">
+          <div class="col"></div>
+          <div class="col">
+            <img src="src/png/bottom_logos.png" class="bottom_logos" />
+          </div>
+
+          <div class="col">
+            <a href="" class="side_text">Termos e condições</a>
+            <a href="views/politicaPrivacidade.html" class="side_text">Política de privacidade</a>
+          </div>
+        </div>
+      </div>
+
+    <script src="src/js/script.js"></script>
   </body>
 </html>
