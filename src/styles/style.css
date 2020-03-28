@@ -35,9 +35,13 @@ body {
   z-index: 1;
 }
 
-.navbar_proj {
+.header_bg{
   position: sticky; 
   top:0;
+  background: white;
+}
+
+.navbar_proj {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
