@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400|Ubuntu:700&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="Student Keep">
+    <meta name="og:description" content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
+    <meta name="og:keywords" content="studentKeep, tech4covid19, students, alunos">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -28,9 +32,13 @@
     </script>
   </head>
   <body id="inicio">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <img src="src/svg/icon_arrow_down.svg" class="up_arrow" />
-    </button>
+    <img
+      src="src/svg/icon_arrow_backtotop.svg"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+    />
+
     <div class="app">
       <!-- Header -->
       <nav class="header navbar_proj navbar-light bg-ligh">
@@ -111,29 +119,37 @@
           <div class="sobre">
             <span class="title_yellow keep_title">Sobre o projeto</span>
             <hr class="yellow_hr" />
-
             <div class="description">
               <p class="description--text">
-                Como forma de combater o atual surto de COVID19 em Portugal,
-                todas as escolas foram obrigadas a suspender as suas atividades
-                letivas presenciais, obrigando professores e alunos a adaptar-se
-                a um ensino à distância.
+                Student Keep é um projeto pertencente ao movimento
+                #tech4COVID19, que procura combater o problema da desigualdade
+                no acesso à Educação, agravado pela suspensão das aulas
+                presenciais devido à pandemia Covid-19. Os alunos que não têm
+                acesso a computador e/ou a internet não conseguem acompanhar as
+                atividades escolares propostas pelos professores que tentam
+                lecionar à distância.
               </p>
               <br />
               <p class="description--text">
-                No entanto, nem todos os alunos têm acesso à internet ou a um
-                computador para acompanharem as atividades propostas pelos
-                professores e o ensino à distância é a única forma de ligação
-                entre professores e alunos até que as atividades letivas
-                presenciais sejam restabelecidas.
+                A principal ação deste projeto consiste na criação de uma
+                plataforma que permita:
               </p>
               <br />
               <p class="description--text">
-                É aqui que este projeto entra. Uma pessoa anónima apadrinha um
-                aluno que está em casa mas cuja família não tem recursos para
-                ter um computador ou até internet , empresta um computador extra
-                que tenha,um hotspot de internet e quando as aulas presenciais
-                forem repostas, o material regressa ao dono.
+                • Quantificar quantos alunos não têm acesso a um computador ou a
+                internet no seu domicílio.
+              </p>
+              <br />
+              <p class="description--text">
+                • Angariar e disponibilizar equipamento informático, que permita
+                colmatar estas necessidades.
+              </p>
+              <br />
+              <p class="description--text">
+                Esta solução opera num sistema de apadrinhamento, através do
+                qual pessoas individuais ou coletivas se tornam Keepers,
+                disponibilizando temporariamente ou permanentemente equipamento
+                informático.
               </p>
             </div>
 
@@ -219,8 +235,17 @@
       <div class="footer">
         <div class="navbar_proj">
           <div class="col"></div>
-          <div class="col">
-            <img src="src/png/bottom_logos.png" class="bottom_logos" />
+          <div class="col bottom_imgs">
+            <img
+              src="src/svg/logo_tech4covid19.svg"
+              style="width: 75%; z-index:2;"
+              onclick="openUrl('https:\/\/tech4covid19.org/')"
+            />
+            <img
+              src="src/svg/logo_alphacoimbra.svg"
+              style="width: 65%; z-index:1; margin-left:-25%"
+              onclick="openUrl('http:\/\/alphacoimbra.com/')"
+            />
           </div>
 
           <div class="col">
