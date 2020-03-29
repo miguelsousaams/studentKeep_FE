@@ -13,6 +13,18 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu:700&display=swap"
       rel="stylesheet"
     />
+    <!--Meta tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://www.studentkeep.org/views/politicaPrivacidade.html">
+    <meta name="og:title" content="Student Keep" />
+    <meta
+      name="og:description"
+      content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19."
+    />
+    <meta
+      name="og:keywords"
+      content="studentKeep, tech4covid19, students, alunos"
+    />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -202,31 +214,47 @@
     <!-- Footer -->
     <div class="footer">
       <div class="navbar_proj">
-        <div class="col"></div>
+        <div class="col">
+          <div class="social-media">
+            <img
+              src="../src/svg/Facebook.svg"
+              class="social_media--logo"
+              onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')"
+            />
+            <img
+              src="../src/svg/Instagram.svg"
+              class="social_media--logo"
+              onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')"
+            />
+            <img
+              src="../src/svg/Linkedin.svg"
+              class="social_media--logo"
+              onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')"
+            />
+          </div>
+        </div>
         <div class="col bottom_imgs">
           <img
             src="../src/svg/logo_tech4covid19.svg"
-            style="width: 75%; z-index:2;"
+            class="logo_footer logo_tech4covid19"
             onclick="openUrl('https:\/\/tech4covid19.org/')"
           />
           <img
             src="../src/svg/logo_alphacoimbra.svg"
-            style="width: 65%; z-index:1; margin-left:-25%"
+            class="logo_footer logo_alphacoimbra"
             onclick="openUrl('http:\/\/alphacoimbra.com/')"
           />
         </div>
-
         <div class="col">
-          <a href="views/termosEcondicoes.html" class="side_text"
+          <a href="termosEcondicoes.html" class="side_text"
             >Termos e condições</a
           >
-          <a href="views/politicaPrivacidade.html" class="side_text"
+          <a href="politicaPrivacidade.html" class="side_text"
             >Política de privacidade</a
           >
         </div>
       </div>
     </div>
-  </div>
     <script src="../src/js/script.js"></script>
   </body>
 </html>
