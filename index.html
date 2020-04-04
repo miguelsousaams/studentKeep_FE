@@ -14,16 +14,38 @@
       rel="stylesheet"
     />
     <!--Meta tags-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:url" content="https://www.studentkeep.org/index.html">
-    <meta name="og:title" content="Student Keep" />
+    <!-- Facebook -->
+    <meta property="og:title" content="Student Keep" />
     <meta
-      name="og:description"
+      property="og:description"
       content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19."
     />
     <meta
-      name="og:keywords"
-      content="studentKeep, tech4covid19, students, alunos"
+      property="og:image"
+      content="https://studentkeep.org/src/jpg/image_og.jpg"
+    />
+    <meta property="og:url" content="https://studentkeep.org" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Student Keep" />
+    <meta
+      name="twitter:description"
+      content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19."
+    />
+    <meta
+      name="twitter:image"
+      content="https://studentkeep.org/src/jpg/image_og.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Other -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19."
+    />
+    <meta
+      name="keywords"
+      content="studentKeep, tech4covid19, students, alunos, covid19"
     />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -50,11 +72,11 @@
     <div class="app">
       <!-- Header -->
       <nav class="header navbar_proj navbar-light bg-ligh">
-        <div class="col">
+        <div class="header-show-logo">
           <img src="src/svg/logo_studentkeep.svg" class="header_logo" />
         </div>
-        <div class="col text-right navbar navbar-expand-sm justify-content-end">
-          <ul class="navbar-nav">
+        <div class="page_sections">
+          <ul class="navigation-nav">
             <li class="nav-item">
               <a class=" nav_subTitle" href="#inicio">Início</a>
             </li>
@@ -240,7 +262,7 @@
         </div>
       </div>
       <!-- Footer -->
-      <div class="footer">
+      <div class="footer footer_desktop">
         <div class="navbar_proj">
           <div class="col">
             <div class="social-media">
@@ -280,6 +302,54 @@
             <a href="views/politicaPrivacidade.html" class="side_text"
               >Política de privacidade</a
             >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer footer_mobile">
+        <div class="navbar_proj">
+          <div class="col mobile_terms_policy">
+            <div class="mobile_links_margin">
+              <a href="views/termosEcondicoes.html" class="side_text"
+                >Termos e condições</a
+              >
+            </div>
+            <div class="mobile_links_margin">
+              <a href="views/politicaPrivacidade.html" class="side_text"
+                >Política de privacidade</a
+              >
+            </div>
+          </div>
+          <div class="col">
+            <div class="social-media">
+              <img
+                src="src/svg/Facebook.svg"
+                class="social_media--logo"
+                onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')"
+              />
+              <img
+                src="src/svg/Instagram.svg"
+                class="social_media--logo middle_logo"
+                onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')"
+              />
+              <img
+                src="src/svg/Linkedin.svg"
+                class="social_media--logo"
+                onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')"
+              />
+            </div>
+          </div>
+          <div class="col bottom_imgs">
+            <img
+              src="src/svg/logo_tech4covid19.svg"
+              class="logo_footer logo_tech4covid19"
+              onclick="openUrl('https:\/\/tech4covid19.org/')"
+            />
+            <img
+              src="src/svg/logo_alphacoimbra.svg"
+              class="logo_footer logo_alphacoimbra"
+              onclick="openUrl('http:\/\/alphacoimbra.com/')"
+            />
           </div>
         </div>
       </div>
