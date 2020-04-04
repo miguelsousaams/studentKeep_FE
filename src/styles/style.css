@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .app {
   font-family: "Ubuntu", sans-serif;
 }
@@ -16,9 +20,7 @@ html {
 
 .bottom_svg {
   margin-top: -6%;
-
   width: 100%;
-
   z-index: 1;
 }
 
@@ -494,13 +496,13 @@ html {
 
   .receive_svg {
     width: 90%;
-}
+  }
 
   .receive {
     margin-top: 10%;
   }
 
-  .nav_subTitle{
+  .nav_subTitle {
     font-size: 20px;
   }
 
@@ -600,7 +602,7 @@ html {
 
   .perguntas {
     margin: -6% 10% 0px;
-}
+  }
 }
 
 @media screen and (max-width: 425px) and (min-width: 300px) {
@@ -612,19 +614,19 @@ html {
     width: 80%;
   }
 
-  .path{
+  .path {
     margin: 5% 9%;
   }
 
   .blue_btn_path,
-  .green_btn_path{
+  .green_btn_path {
     padding: 10px 16px;
     font-size: 10px;
   }
 
   .receive_svg {
     width: 90%;
-}
+  }
 
   .receive {
     margin-top: 10%;
@@ -647,7 +649,7 @@ html {
     font-size: 40px;
   }
 
-  .title_yellow{
+  .title_yellow {
     padding-bottom: 10px;
   }
 
