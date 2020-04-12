@@ -6,21 +6,23 @@ function dropdown(question) {
     document.getElementById(idElemento).classList.add("show");
     question.src = "src/svg/icon_minus.svg";
 
-  }else {
+  } else {
     document.getElementById(idElemento).classList.remove("show");
     document.getElementById(idElemento).classList.add("hidden");
     question.src = "src/svg/icon_plus.svg";
   }
 }
 
-function openUrl(url){
+function openUrl(url) {
   window.open(url, '_blank');
 }
 
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction()
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -44,21 +46,21 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("modalBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementById("closeModal");
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+btn.onclick = function () {
+  modal.classList.add("visible");
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+span.onclick = function () {
+  modal.classList.remove("visible");
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.classList.remove("visible");
   }
 }
