@@ -10,8 +10,16 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+a {
+  white-space: nowrap;
+}
+
 .header {
   margin: 40px 90px 27px 90px;
+}
+
+.header-show-logo {
+  margin: 0 auto;
 }
 
 .header_logo {
@@ -118,6 +126,7 @@ body {
 
 .apoios_primary_images {
   max-width: 100%;
+  margin: 30px 0;
 }
 
 .svg {
@@ -530,8 +539,8 @@ body {
 
 .bottom_imgs {
   position: relative;
-  width: 750px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 750px;
   margin: 0 auto;
   height: 125px;
 }
@@ -560,6 +569,7 @@ body {
 .social_media--logo {
   width: 8%;
   min-width: 30px;
+  max-width: 50px;
   margin-right: 3%;
   cursor: pointer;
 }
@@ -635,6 +645,8 @@ body {
 }
 
 
+
+
 @media screen and (max-width: 800px) and (min-width: 426px) {
   .navigation-nav {
     flex-direction: column;
@@ -698,6 +710,7 @@ body {
 
   .header-show-logo {
     text-align: center;
+    margin: 0 auto;
   }
 
   .subTitle {
@@ -744,7 +757,7 @@ body {
 
   #myBtn {
     right: 3%;
-    width: 5%;
+    /* width: 5%; */
   }
 
   .juntate_section {
@@ -821,6 +834,9 @@ body {
 
   .header-show-logo {
     text-align: center;
+    margin: 0 auto;
+
+
   }
 
   .subTitle {
@@ -871,11 +887,13 @@ body {
 
   #myBtn {
     right: 7%;
-    width: 10%;
+    /* width: 10%; */
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 0px) {
+@media screen and (max-width: 1140px) and (min-width: 0px) {
+
+
   .header-show-logo {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -891,15 +909,15 @@ body {
     flex-direction: column;
   }
 
-  .flex-order-1 {
+  .social-media-wrapper {
     order: 1
   }
 
-  .flex-order-2 {
+  .footer-text-wrapper {
     order: 2;
   }
 
-  .flex-order-3 {
+  .bottom_imgs_wrapper {
     order: 3;
   }
 
@@ -919,8 +937,34 @@ body {
 
   .bottom_imgs {
     margin-left: 0px;
-    height: 17vw;
-    width: 100vw;
+    height: 14vw;
+    width: 80vw;
     max-height: 125px;
+    margin: 0 auto;
+  }
+
+  .page_sections {
+    margin-top: 20px;
+    padding: 0;
+    justify-content: center;
+    text-align: center
+  }
+}
+
+@media screen and (min-width: 1140px) {
+
+
+  .social-media-wrapper {
+    flex-grow: 1;
+  }
+
+  .footer-text-wrapper {
+    flex-grow: 1;
+
+  }
+
+  .bottom_imgs_wrapper {
+    flex-grow: 2;
+
   }
 }
