@@ -61,7 +61,7 @@
       gtag("config", "G-4N0Z2DTDPP");
     </script>
   </head>
-  <body id="inicio">
+  <body id="inicio" class="index_body">
     <img
       src="src/svg/icon_arrow_backtotop.svg"
       onclick="topFunction()"
@@ -78,21 +78,19 @@
         <div class="page_sections">
           <ul class="navigation-nav">
             <li class="nav-item">
-              <a class=" nav_subTitle" href="#inicio">Início</a>
+              <a class="nav_subTitle" href="#inicio">Início</a>
             </li>
             <li class="nav-item">
-              <a class=" nav_subTitle" href="#sobre">Sobre</a>
+              <a class="nav_subTitle" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class=" nav_subTitle" href="#perguntas">Perguntas</a>
+              <a class="nav_subTitle" href="#ajuda">Preciso de ajuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_subTitle" href="#apoios">Apoios</a>
             </li>
           </ul>
-          <a
-            class="blue_btn"
-            href="https://forms.gle/cDLMPN9tT6TUfL6DA"
-            target="_blank"
-            >Ajudar!</a
-          >
+          <a class="blue_btn" href="#juntate">Junta-te à equipa!</a>
         </div>
       </nav>
       <!-- Body -->
@@ -101,36 +99,44 @@
         <div class="inicio">
           <span class="title">Student Keep</span>
           <p class="subTitle">
-            Tens um computador a mais ou um hotspot de internet que uses em viagem? Ajuda um aluno que não tenha acesso a computador ou internet, dando-lhe uma oportunidade para acompanhar as aulas. Torna-te num Keeper! Faz a Educação ir mais longe!
+            Tens um computador a mais ou um hotspot de internet que uses em
+            viagem? Ajuda um aluno que não tenha acesso a computador ou
+            internet, dando-lhe uma oportunidade para acompanhar as aulas.
+          </p>
+          <p class="subTitle">
+            Torna-te num Keeper! Faz a Educação ir mais longe!
           </p>
 
+          <div class="select_forms">
+            <p class="select_forms-text">
+              Selecciona um dos formulários para começar
+            </p>
+          </div>
+
           <!-- Images recieve or donate-->
-          <div class="donate--receive">
-            <div class="donate">
+          <div class="donate_comp_part">
+            <div class="donate_part">
               <img
-                class="donate_svg svg "
-                src="src/svg/illustration_donate.svg"
+                class="donate_svg svg"
+                src="src/svg/image_donate_particular.svg"
               />
               <div class="large_btn--wrapper">
                 <a
                   class="large_btn donate_btn"
-                  href="https://forms.gle/cDLMPN9tT6TUfL6DA"
+                  href="https://forms.gle/nVnHSFLBV4766XhKA"
                   target="_blank"
-                  >Quero ajudar</a
+                  >Sou Particular</a
                 >
               </div>
             </div>
-            <div class="receive">
+            <div class="donate_comp">
               <img
-                class="receive_svg svg"
-                src="src/svg/illustration_receive.svg"
+                class="donate_comp_svg svg"
+                src="src/svg/image_donate_empresas.svg"
               />
               <div class="large_btn--wrapper">
-                <a
-                  class="large_btn receive_btn"
-                  href="https://forms.gle/nVnHSFLBV4766XhKA"
-                  target="_blank"
-                  >Preciso ajuda</a
+                <a class="large_btn donate_comp_btn" href="" target="_blank"
+                  >Sou Empresa</a
                 >
               </div>
             </div>
@@ -149,116 +155,123 @@
             <hr class="yellow_hr" />
             <div class="description">
               <p class="description--text">
-                Student Keep é um projeto pertencente ao movimento
-                #tech4COVID19, que procura combater o problema da desigualdade
-                no acesso à Educação, agravado pela suspensão das aulas
-                presenciais devido à pandemia Covid-19. Os alunos que não têm
-                acesso a computador e/ou a internet não conseguem acompanhar as
-                atividades escolares propostas pelos professores que tentam
-                lecionar à distância.
+                Como forma de combater o atual surto de COVID19 em Portugal,
+                todas as escolas foram obrigadas a suspender as suas atividades
+                letivas presenciais, obrigando professores e alunos a adaptar-se
+                a um ensino à distância.
               </p>
               <br />
               <p class="description--text">
-                A principal ação deste projeto consiste na criação de uma
-                plataforma que permita:
+                No entanto, nem todos os alunos têm acesso à internet ou a um
+                computador para acompanharem as atividades propostas pelos
+                professores e o ensino à distância é a única forma de ligação
+                entre professores e alunos até que as atividades letivas
+                presenciais sejam restabelecidas. É aqui que este projeto entra.
               </p>
               <br />
               <p class="description--text">
-                • Quantificar quantos alunos não têm acesso a um computador ou a
-                internet no seu domicílio.
-              </p>
-              <br />
-              <p class="description--text">
-                • Angariar e disponibilizar equipamento informático, que permita
-                colmatar estas necessidades.
-              </p>
-              <br />
-              <p class="description--text">
-                Esta solução opera num sistema de apadrinhamento, através do
-                qual pessoas individuais ou coletivas se tornam Keepers,
-                disponibilizando temporariamente ou permanentemente equipamento
-                informático.
+                Uma pessoa ou uma empresa apadrinha um aluno que está em casa,
+                mas cuja família não tem recursos para ter um computador ou até
+                internet, concedendo um ou mais computadores extra que tenha.
               </p>
             </div>
 
             <div class="numeros_total" style="display: none;">
-              Até agora conseguimos ajudar <span class="numero">X</span> alunos
-              com <span class="numero">X</span> equipamentos, emprestados por
-              <span class="numero">X</span> pessoas. Obrigado.
+              Já conseguimos angariar <span class="numero">X</span> equipamentos
+              informáticos.
+              <p>Obrigado.</p>
             </div>
           </div>
         </div>
         <img src="src/svg/vector_wave_top.svg" class="top_svg" />
 
-        <!-- Perguntas -->
-        <div id="perguntas" class="perguntas">
-          <span class="title_yellow">Perguntas</span>
-          <hr class="yellow_hr" />
+        <!-- Junta-te à equipa -->
+        <div id="juntate" class="juntate_section">
+          <div class="juntate">
+            <span class="title_yellow">Junta-te à equipa</span>
+            <hr class="yellow_hr" />
 
-          <div class="criterio">
-            <div id="pergunta">
-              <div class="pergunta">
-                <span>Como trabalhamos?</span>
-                <div class="texto_criterios hidden" id="pergunta-1">
-                  <p>
-                    1. A sinalização de casos de necessidade;
-                  </p>
-                  <p>
-                    2. A identificação de Keepers, padrinhos, que podem ser
-                    pessoas individuais ou coletivas, que disponibilizam
-                    temporariamente ou permanentemente o equipamento;
-                  </p>
-                  <p>
-                    3. A entrega/empréstimo do material angariado, quer
-                    diretamente quer por intermédio de entidades públicas locais
-                    que assegurem a mediação.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="src/svg/icon_plus.svg"
-                  class="icon_plus"
-                  id="1"
-                  onclick="dropdown(this)"
-                />
-              </div>
+            <div class="juntate_description">
+              <p class="description--text">
+                Enquanto projeto do movimento #tech4COVID19, a equipa Student
+                Keep é composta exclusivamente por voluntários. Procuramos
+                profissionais com conhecimentos em IT, configuração de PC,
+                manutenção de equipamento e apoio técnico remoto. Se tens
+                interesse em te envolveres ativamente no projeto, podes-te
+                registar na plataforma #tech4COVID19 e aderir ao
+                #project_student_keep ou preencher o formulário abaixo.
+              </p>
             </div>
-
-            <div>
-              <div class="pergunta">
-                <span>Como participar?</span>
-                <div class="texto_criterios hidden" id="pergunta-2">
-                  <p>
-                    Os Keepers, ou padrinhos, são pessoas individuais ou
-                    coletivas que disponibilizam temporariamente ou
-                    permanentemente o equipamento informático (como PC, tablets,
-                    internet móvel tipicamente usada em viagens) a alunos sem
-                    acesso a estes meios.
-                  </p>
-                  <p>
-                    Torne-se num Keeper preenchendo este rápido
-                    <a
-                      href="https://forms.gle/cDLMPN9tT6TUfL6DA"
-                      target="_blank"
-                      class="link_formulario"
-                      >formulário</a
-                    >.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="src/svg/icon_plus.svg"
-                  class="icon_plus"
-                  id="2"
-                  onclick="dropdown(this)"
-                />
+            <div class="volunteers">
+              <img
+                class="volunteers_svg svg"
+                src="src/svg/image_volunteers.svg"
+              />
+              <div class="large_btn--wrapper">
+                <a class="volunteers_btn" href="" target="_blank"
+                  >Onde me inscrevo?</a
+                >
               </div>
             </div>
           </div>
         </div>
+
+        <img src="src/svg/ui_wave_grey_blue_top.svg" class="bottom_svg" />
+
+        <!-- Preciso de ajuda -->
+        <div id="ajuda" class="ajuda_section">
+          <div class="ajuda">
+            <!-- Modal -->
+            <div id="myModal" class="modal_ajuda">
+
+              <!-- Modal content -->
+              <div class="modal-content_ajuda">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>
+            
+            </div>
+
+            <span class="title_yellow">Preciso de ajuda</span>
+            <hr class="yellow_hr" />
+
+            <div class="juntate_description">
+              <p class="description--text">
+                No âmbito das medidas adotadas em resposta à pandemia de
+                Covid-19, foi necessário proceder ao encerramento temporário das
+                escolas e avançar com soluções de ensino a distância que passam,
+                essencialmente, pela utilização de recursos e ferramentas
+                digitais. Neste contexto, os alunos que não têm acesso a
+                computador e/ou a internet em casa sentem, naturalmente, uma
+                dificuldade acrescida perante este desafio inédito.
+              </p>
+            </div>
+            <div class="large_btn--wrapper">
+              <button class="large_btn need_help_btn" id="modalBtn">
+                Preciso de ajuda
+              </button>
+            </div>
+          </div>
+        </div>
+        <img src="src/svg/ui_wave_grey_single_bottom.svg" class="bottom_svg help_svg" />
+
+        <!-- Apoios -->
+        <div id="apoios" class="apoios_section">
+          <div class="apoios">
+            <span class="title_yellow">Apoios</span>
+            <hr class="yellow_hr" />
+
+            <div class="apoios_description">
+              <p class="apoios_text">
+                Este projeto conta com o apoio das seguintes entidades:
+              </p>
+
+              <img src="src/svg/logo_gulbenkian.svg" class="logo_gulbenkian" />
+            </div>
+          </div>
+        </div>
       </div>
+
       <!-- Footer -->
       <div class="footer footer_desktop">
         <div class="navbar_proj">
