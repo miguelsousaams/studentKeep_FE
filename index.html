@@ -1,370 +1,267 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Student Keep</title>
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="src/icons/favicon.ico"
-    />
-    <link rel="stylesheet" type="text/css" href="src/styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/bootstrap.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400|Ubuntu:700&display=swap"
-      rel="stylesheet"
-    />
-    <!--Meta tags-->
-    <!-- Facebook -->
-    <meta property="og:title" content="Student Keep" />
-    <meta
-      property="og:description"
-      content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19."
-    />
-    <meta
-      property="og:image"
-      content="https://studentkeep.org/src/jpg/image_og.jpg"
-    />
-    <meta property="og:url" content="https://studentkeep.org" />
-    <meta property="og:type" content="website" />
-    <!-- Twitter -->
-    <meta name="twitter:title" content="Student Keep" />
-    <meta
-      name="twitter:description"
-      content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19."
-    />
-    <meta
-      name="twitter:image"
-      content="https://studentkeep.org/src/jpg/image_og.jpg"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- Other -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19."
-    />
-    <meta
-      name="keywords"
-      content="studentKeep, tech4covid19, students, alunos, covid19"
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4N0Z2DTDPP"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-4N0Z2DTDPP");
-    </script>
-  </head>
-  <body id="inicio" class="index_body">
-    <img
-      src="src/svg/icon_arrow_backtotop.svg"
-      onclick="topFunction()"
-      id="myBtn"
-      title="Go to top"
-    />
 
-    <div class="app">
-      <!-- Header -->
-      <nav class="header navbar_proj navbar-light bg-ligh">
-        <div class="header-show-logo">
-          <img src="src/svg/logo_studentkeep.svg" class="header_logo" />
-        </div>
-        <div class="page_sections">
-          <ul class="navigation-nav">
-            <li class="nav-item">
-              <a class="nav_subTitle" href="#inicio">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav_subTitle" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav_subTitle" href="#ajuda">Preciso de ajuda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav_subTitle" href="#apoios">Apoios</a>
-            </li>
-          </ul>
-          <a class="blue_btn" href="#juntate">Junta-te à equipa!</a>
-        </div>
-      </nav>
-      <!-- Body -->
-      <div class="body">
-        <!-- Inicio -->
-        <div class="inicio">
-          <span class="title">Student Keep</span>
-          <p class="subTitle">
-            Tens um computador a mais ou um hotspot de internet que uses em
-            viagem? Ajuda um aluno que não tenha acesso a computador ou
-            internet, dando-lhe uma oportunidade para acompanhar as aulas.
-          </p>
-          <p class="subTitle">
-            Torna-te num Keeper! Faz a Educação ir mais longe!
-          </p>
+<head>
+  <title>Student Keep</title>
+  <link rel="shortcut icon" type="image/x-icon" href="src/icons/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="src/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="src/styles/style.css" />
 
-          <div class="select_forms">
-            <p class="select_forms-text">
-              Selecciona um dos formulários para começar
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Ubuntu:700&display=swap" rel="stylesheet" />
+  <!--Meta tags-->
+  <!-- Facebook -->
+  <meta property="og:title" content="Student Keep" />
+  <meta property="og:description"
+    content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
+  <meta property="og:image" content="https://studentkeep.org/src/jpg/image_og.jpg" />
+  <meta property="og:url" content="https://studentkeep.org" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Student Keep" />
+  <meta name="twitter:description"
+    content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
+  <meta name="twitter:image" content="https://studentkeep.org/src/jpg/image_og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Other -->
+  <meta charset="utf8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
+  <meta name="keywords" content="studentKeep, tech4covid19, students, alunos, covid19" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N0Z2DTDPP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-4N0Z2DTDPP");
+  </script>
+</head>
+
+<body id="inicio" class="index_body">
+  <img src="src/svg/icon_arrow_backtotop.svg" onclick="topFunction()" id="myBtn" title="Go to top" />
+
+  <div class="app">
+    <!-- Header -->
+    <nav class="header navbar_proj navbar-light bg-ligh">
+      <div class="header-show-logo">
+        <img src="src/svg/logo_studentkeep.svg" class="header_logo" />
+      </div>
+      <div class="page_sections">
+        <ul class="navigation-nav">
+          <li class="nav-item">
+            <a class="nav_subTitle" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav_subTitle" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav_subTitle" href="#ajuda">Preciso de ajuda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav_subTitle" href="#apoios">Apoios</a>
+          </li>
+          <li class="nav-item">
+            <a class="blue_btn" href="#juntate">Junta-te à equipa!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Body -->
+    <div class="body">
+      <!-- Inicio -->
+      <div class="inicio">
+        <span class="title">Student Keep</span>
+        <p class="subTitle">
+          Tens um computador a mais ou um hotspot de internet que uses em
+          viagem? Ajuda um aluno que não tenha acesso a computador ou
+          internet, dando-lhe uma oportunidade para acompanhar as aulas.
+        </p>
+        <p class="subTitle">
+          Torna-te num Keeper! Faz a Educação ir mais longe!
+        </p>
+
+        <div class="select_forms">
+          <p class="select_forms-text">
+            Selecciona um dos formulários para começar
+          </p>
+        </div>
+
+        <!-- Images recieve or donate-->
+        <div class="donate_comp_part">
+          <div class="donate_part">
+            <img class="donate_svg svg" src="src/svg/image_donate_particular.svg" />
+            <div class="large_btn--wrapper">
+              <a class="large_btn donate_btn" href="https://forms.gle/nVnHSFLBV4766XhKA" target="_blank">Sou
+                Particular</a>
+            </div>
+          </div>
+          <div class="donate_comp">
+            <img class="donate_comp_svg svg" src="src/svg/image_donate_empresas.svg" />
+            <div class="large_btn--wrapper">
+              <a class="large_btn donate_comp_btn" href="" target="_blank">Sou Empresa</a>
+            </div>
+          </div>
+        </div>
+        <div class="go_down">
+          <img class="down_arrow svg" src="src/svg/icon_arrow_down.svg" />
+        </div>
+      </div>
+
+      <img src="src/svg/vector_wave_bottom.svg" class="bottom_svg" />
+
+      <!-- Sobre -->
+      <div id="sobre" class="before_sobre">
+        <div class="sobre">
+          <span class="title_yellow keep_title">Sobre o projeto</span>
+          <hr class="yellow_hr" />
+          <div class="description">
+            <p class="description--text">
+              Como forma de combater o atual surto de COVID19 em Portugal,
+              todas as escolas foram obrigadas a suspender as suas atividades
+              letivas presenciais, obrigando professores e alunos a adaptar-se
+              a um ensino à distância.
+            </p>
+            <br />
+            <p class="description--text">
+              No entanto, nem todos os alunos têm acesso à internet ou a um
+              computador para acompanharem as atividades propostas pelos
+              professores e o ensino à distância é a única forma de ligação
+              entre professores e alunos até que as atividades letivas
+              presenciais sejam restabelecidas. É aqui que este projeto entra.
+            </p>
+            <br />
+            <p class="description--text">
+              Uma pessoa ou uma empresa apadrinha um aluno que está em casa,
+              mas cuja família não tem recursos para ter um computador ou até
+              internet, concedendo um ou mais computadores extra que tenha.
             </p>
           </div>
 
-          <!-- Images recieve or donate-->
-          <div class="donate_comp_part">
-            <div class="donate_part">
-              <img
-                class="donate_svg svg"
-                src="src/svg/image_donate_particular.svg"
-              />
-              <div class="large_btn--wrapper">
-                <a
-                  class="large_btn donate_btn"
-                  href="https://forms.gle/nVnHSFLBV4766XhKA"
-                  target="_blank"
-                  >Sou Particular</a
-                >
-              </div>
-            </div>
-            <div class="donate_comp">
-              <img
-                class="donate_comp_svg svg"
-                src="src/svg/image_donate_empresas.svg"
-              />
-              <div class="large_btn--wrapper">
-                <a class="large_btn donate_comp_btn" href="" target="_blank"
-                  >Sou Empresa</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="go_down">
-            <img class="down_arrow svg" src="src/svg/icon_arrow_down.svg" />
+          <div class="numeros_total" style="display: none;">
+            Já conseguimos angariar <span class="numero">X</span> equipamentos
+            informáticos.
+            <p>Obrigado.</p>
           </div>
         </div>
+      </div>
+      <img src="src/svg/vector_wave_top.svg" class="top_svg" />
 
-        <img src="src/svg/vector_wave_bottom.svg" class="bottom_svg" />
+      <!-- Junta-te à equipa -->
+      <div id="juntate" class="juntate_section">
+        <div class="juntate">
+          <span class="title_yellow">Junta-te à equipa</span>
+          <hr class="yellow_hr" />
 
-        <!-- Sobre -->
-        <div id="sobre" class="before_sobre">
-          <div class="sobre">
-            <span class="title_yellow keep_title">Sobre o projeto</span>
-            <hr class="yellow_hr" />
-            <div class="description">
-              <p class="description--text">
-                Como forma de combater o atual surto de COVID19 em Portugal,
-                todas as escolas foram obrigadas a suspender as suas atividades
-                letivas presenciais, obrigando professores e alunos a adaptar-se
-                a um ensino à distância.
-              </p>
-              <br />
-              <p class="description--text">
-                No entanto, nem todos os alunos têm acesso à internet ou a um
-                computador para acompanharem as atividades propostas pelos
-                professores e o ensino à distância é a única forma de ligação
-                entre professores e alunos até que as atividades letivas
-                presenciais sejam restabelecidas. É aqui que este projeto entra.
-              </p>
-              <br />
-              <p class="description--text">
-                Uma pessoa ou uma empresa apadrinha um aluno que está em casa,
-                mas cuja família não tem recursos para ter um computador ou até
-                internet, concedendo um ou mais computadores extra que tenha.
-              </p>
-            </div>
-
-            <div class="numeros_total" style="display: none;">
-              Já conseguimos angariar <span class="numero">X</span> equipamentos
-              informáticos.
-              <p>Obrigado.</p>
-            </div>
+          <div class="juntate_description">
+            <p class="description--text">
+              Enquanto projeto do movimento #tech4COVID19, a equipa Student
+              Keep é composta exclusivamente por voluntários. Procuramos
+              profissionais com conhecimentos em IT, configuração de PC,
+              manutenção de equipamento e apoio técnico remoto. Se tens
+              interesse em te envolveres ativamente no projeto, podes-te
+              registar na plataforma #tech4COVID19 e aderir ao
+              #project_student_keep ou preencher o formulário abaixo.
+            </p>
           </div>
-        </div>
-        <img src="src/svg/vector_wave_top.svg" class="top_svg" />
-
-        <!-- Junta-te à equipa -->
-        <div id="juntate" class="juntate_section">
-          <div class="juntate">
-            <span class="title_yellow">Junta-te à equipa</span>
-            <hr class="yellow_hr" />
-
-            <div class="juntate_description">
-              <p class="description--text">
-                Enquanto projeto do movimento #tech4COVID19, a equipa Student
-                Keep é composta exclusivamente por voluntários. Procuramos
-                profissionais com conhecimentos em IT, configuração de PC,
-                manutenção de equipamento e apoio técnico remoto. Se tens
-                interesse em te envolveres ativamente no projeto, podes-te
-                registar na plataforma #tech4COVID19 e aderir ao
-                #project_student_keep ou preencher o formulário abaixo.
-              </p>
-            </div>
-            <div class="volunteers">
-              <img
-                class="volunteers_svg svg"
-                src="src/svg/image_volunteers.svg"
-              />
-              <div class="large_btn--wrapper">
-                <a class="volunteers_btn" href="" target="_blank"
-                  >Onde me inscrevo?</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <img src="src/svg/ui_wave_grey_blue_top.svg" class="bottom_svg" />
-
-        <!-- Preciso de ajuda -->
-        <div id="ajuda" class="ajuda_section">
-          <div class="ajuda">
-            <!-- Modal -->
-            <div id="myModal" class="modal_ajuda">
-
-              <!-- Modal content -->
-              <div class="modal-content_ajuda">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
-              </div>
-            
-            </div>
-
-            <span class="title_yellow">Preciso de ajuda</span>
-            <hr class="yellow_hr" />
-
-            <div class="juntate_description">
-              <p class="description--text">
-                No âmbito das medidas adotadas em resposta à pandemia de
-                Covid-19, foi necessário proceder ao encerramento temporário das
-                escolas e avançar com soluções de ensino a distância que passam,
-                essencialmente, pela utilização de recursos e ferramentas
-                digitais. Neste contexto, os alunos que não têm acesso a
-                computador e/ou a internet em casa sentem, naturalmente, uma
-                dificuldade acrescida perante este desafio inédito.
-              </p>
-            </div>
+          <div class="volunteers">
+            <img class="volunteers_svg svg" src="src/svg/image_volunteers.svg" />
             <div class="large_btn--wrapper">
-              <button class="large_btn need_help_btn" id="modalBtn">
-                Preciso de ajuda
-              </button>
-            </div>
-          </div>
-        </div>
-        <img src="src/svg/ui_wave_grey_single_bottom.svg" class="bottom_svg help_svg" />
-
-        <!-- Apoios -->
-        <div id="apoios" class="apoios_section">
-          <div class="apoios">
-            <span class="title_yellow">Apoios</span>
-            <hr class="yellow_hr" />
-
-            <div class="apoios_description">
-              <p class="apoios_text">
-                Este projeto conta com o apoio das seguintes entidades:
-              </p>
-
-              <img src="src/svg/logo_gulbenkian.svg" class="logo_gulbenkian" />
+              <a class="volunteers_btn" href="" target="_blank">Onde me inscrevo?</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Footer -->
-      <div class="footer footer_desktop">
-        <div class="navbar_proj">
-          <div class="col">
-            <div class="social-media">
-              <img
-                src="src/svg/Facebook.svg"
-                class="social_media--logo"
-                onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')"
-              />
-              <img
-                src="src/svg/Instagram.svg"
-                class="social_media--logo"
-                onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')"
-              />
-              <img
-                src="src/svg/Linkedin.svg"
-                class="social_media--logo"
-                onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')"
-              />
+      <img src="src/svg/ui_wave_grey_blue_top.svg" class="bottom_svg" />
+
+      <!-- Preciso de ajuda -->
+      <div id="ajuda" class="ajuda_section">
+        <div class="ajuda">
+          <!-- Modal -->
+          <div id="myModal" class="modal_ajuda">
+
+            <!-- Modal content -->
+            <div class="modal-content_ajuda">
+              <span class="close">&times;</span>
+              <p>Some text in the Modal..</p>
             </div>
+
           </div>
-          <div class="col bottom_imgs">
-            <img
-              src="src/svg/logo_tech4covid19.svg"
-              class="logo_footer logo_tech4covid19"
-              onclick="openUrl('https:\/\/tech4covid19.org/')"
-            />
-            <img
-              src="src/svg/logo_alphacoimbra.svg"
-              class="logo_footer logo_alphacoimbra"
-              onclick="openUrl('http:\/\/alphacoimbra.com/')"
-            />
+
+          <span class="title_yellow">Preciso de ajuda</span>
+          <hr class="yellow_hr" />
+
+          <div class="juntate_description">
+            <p class="description--text">
+              No âmbito das medidas adotadas em resposta à pandemia de
+              Covid-19, foi necessário proceder ao encerramento temporário das
+              escolas e avançar com soluções de ensino a distância que passam,
+              essencialmente, pela utilização de recursos e ferramentas
+              digitais. Neste contexto, os alunos que não têm acesso a
+              computador e/ou a internet em casa sentem, naturalmente, uma
+              dificuldade acrescida perante este desafio inédito.
+            </p>
           </div>
-          <div class="col">
-            <a href="views/termosEcondicoes.html" class="side_text"
-              >Termos e condições</a
-            >
-            <a href="views/politicaPrivacidade.html" class="side_text"
-              >Política de privacidade</a
-            >
+          <div class="large_btn--wrapper">
+            <button class="large_btn need_help_btn" id="modalBtn">
+              Preciso de ajuda
+            </button>
           </div>
         </div>
       </div>
+      <img src="src/svg/ui_wave_grey_single_bottom.svg" class="bottom_svg help_svg" />
 
-      <div class="footer footer_mobile">
-        <div class="navbar_proj">
-          <div class="col mobile_terms_policy">
-            <div class="mobile_links_margin">
-              <a href="views/termosEcondicoes.html" class="side_text"
-                >Termos e condições</a
-              >
-            </div>
-            <div class="mobile_links_margin">
-              <a href="views/politicaPrivacidade.html" class="side_text"
-                >Política de privacidade</a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="social-media">
-              <img
-                src="src/svg/Facebook.svg"
-                class="social_media--logo"
-                onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')"
-              />
-              <img
-                src="src/svg/Instagram.svg"
-                class="social_media--logo middle_logo"
-                onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')"
-              />
-              <img
-                src="src/svg/Linkedin.svg"
-                class="social_media--logo"
-                onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')"
-              />
-            </div>
-          </div>
-          <div class="col bottom_imgs">
-            <img
-              src="src/svg/logo_tech4covid19.svg"
-              class="logo_footer logo_tech4covid19"
-              onclick="openUrl('https:\/\/tech4covid19.org/')"
-            />
-            <img
-              src="src/svg/logo_alphacoimbra.svg"
-              class="logo_footer logo_alphacoimbra"
-              onclick="openUrl('http:\/\/alphacoimbra.com/')"
-            />
+      <!-- Apoios -->
+      <div id="apoios" class="apoios_section">
+        <div class="apoios">
+          <span class="title_yellow">Apoios</span>
+          <hr class="yellow_hr" />
+
+          <div class="apoios_description">
+            <p class="apoios_text">
+              Este projeto conta com o apoio das seguintes entidades:
+            </p>
+
+            <img class="apoios_primary_images" src="src/svg/logo_gulbenkian.svg" class="logo_gulbenkian" />
           </div>
         </div>
       </div>
     </div>
-    <script src="src/js/script.js"></script>
-  </body>
+
+    <!-- Footer -->
+    <div class="footer footer_desktop">
+      <div class="navbar_proj">
+        <div class="col flex-order-1">
+          <div class="social-media">
+            <img src="src/svg/Facebook.svg" class="social_media--logo"
+              onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')" />
+            <img src="src/svg/Instagram.svg" class="social_media--logo"
+              onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')" />
+            <img src="src/svg/Linkedin.svg" class="social_media--logo"
+              onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')" />
+          </div>
+        </div>
+        <div class="col flex-order-3">
+          <div class="bottom_imgs">
+            <img src="src/svg/logo_tech4covid19.svg" class="logo_footer logo_tech4covid19"
+              onclick="openUrl('https:\/\/tech4covid19.org/')" />
+            <img src="src/svg/logo_alphacoimbra.svg" class="logo_footer logo_alphacoimbra"
+              onclick="openUrl('http:\/\/alphacoimbra.com/')" />
+          </div>
+        </div>
+        <div class="col flex-order-2">
+          <div class="footer-text">
+            <a href="views/termosEcondicoes.html" class="side_text">Termos e condições</a>
+            <a href="views/politicaPrivacidade.html" class="side_text">Política de privacidade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/js/script.js"></script>
+</body>
+
 </html>

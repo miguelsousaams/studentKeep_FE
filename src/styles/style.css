@@ -57,7 +57,7 @@ body {
   padding-bottom: 8%;
 }
 
-.apoios_section{
+.apoios_section {
   margin-top: -4%;
 }
 
@@ -106,14 +106,18 @@ body {
   margin: 0px 10%;
 }
 
-.apoios_description{
+.apoios_description {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   margin: 5% 10% 10%;
 }
 
-.apoios_text{
+.apoios_text {
   margin-bottom: 10%;
+}
+
+.apoios_primary_images {
+  max-width: 100%;
 }
 
 .svg {
@@ -141,34 +145,44 @@ body {
   margin: 25px;
   font-size: 15px;
   transition: all 0.2s ease-in-out;
+  white-space: nowrap;
 }
 
 .large_btn {
   border-radius: 5px;
 
   padding: 12px 55px;
-
+  transform: scale(1);
+  box-shadow: 0;
   color: white;
+  border: transparent;
   font-size: 15px;
+  transition: all 0.2s ease-in-out;
 }
 
 .large_btn--wrapper {
   margin-top: 40px;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+
 }
 
 .donate_btn {
   background: #e24185 0% 0% no-repeat padding-box;
   z-index: 2;
+
 }
 
 .donate_comp_btn {
   background: #ffd100 0% 0% no-repeat padding-box;
   z-index: 2;
+
 }
 
 .need_help_btn {
   background: #07b5bd 0% 0% no-repeat padding-box;
   z-index: 2;
+
 }
 
 .volunteers_btn {
@@ -178,9 +192,9 @@ body {
   border-radius: 5px;
 
   padding: 12px 40px;
-
   color: white;
   font-size: 15px;
+
 }
 
 .volunteers_svg {
@@ -241,6 +255,7 @@ body {
   border: 3px solid #ffd100;
   border-radius: 2px;
   width: 90px;
+  box-shadow: inset 0px 0px 0px 20px #ffd100;
 }
 
 .description {
@@ -313,7 +328,7 @@ body {
   display: block;
 }
 
-.pergunta > span {
+.pergunta>span {
   font-size: 18px;
 }
 
@@ -331,12 +346,17 @@ body {
   text-align: right;
 }
 
+.footer-text {
+  text-align: right;
+  white-space: nowrap;
+}
+
 .side_text {
   font-family: "Open Sans", sans-serif;
   color: #0d1e51;
   text-align: left;
   font-size: 14px;
-  margin-right: 10%;
+  margin: 10px
 }
 
 .numeros_total {
@@ -509,7 +529,15 @@ body {
 }
 
 .bottom_imgs {
-  display: flex;
+  position: relative;
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 125px;
+}
+
+.bottom_imgs img {
+  height: inherit;
 }
 
 .logo_footer {
@@ -517,18 +545,21 @@ body {
 }
 
 .logo_alphacoimbra {
-  width: 65%;
-  z-index: 1;
-  margin-left: -25%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .logo_tech4covid19 {
-  width: 75%;
-  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .social_media--logo {
   width: 8%;
+  min-width: 30px;
   margin-right: 3%;
   cursor: pointer;
 }
@@ -569,7 +600,8 @@ body {
 /* Modal Content/Box */
 .modal-content_ajuda {
   background-color: #fefefe;
-  margin: 15% 10%; /* 15% from the top and centered */
+  margin: 15% 10%;
+  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
 
@@ -602,7 +634,16 @@ body {
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 800px) and (min-width: 426px) {
+  .navigation-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
   .header {
     margin: 30px 15% 15px;
   }
@@ -640,10 +681,6 @@ body {
     font-size: 50px;
   }
 
-  .blue_btn {
-    display: none;
-  }
-
   .donate_comp_part {
     display: block;
   }
@@ -671,14 +708,6 @@ body {
     margin-top: -5%;
   }
 
-  .footer_desktop {
-    display: none;
-  }
-
-  .footer_mobile {
-    display: block;
-  }
-
   .side_text {
     margin-right: 0px;
     font-size: 17px;
@@ -700,6 +729,7 @@ body {
 
   .social_media--logo {
     width: 8%;
+    min-width: 30px;
     margin-right: 0%;
   }
 
@@ -801,9 +831,6 @@ body {
     margin-top: -10%;
   }
 
-  .footer_desktop {
-    display: none;
-  }
 
   .footer_mobile {
     display: block;
@@ -829,6 +856,7 @@ body {
 
   .social_media--logo {
     width: 10%;
+    min-width: 30px;
     margin-right: 0%;
   }
 
@@ -844,5 +872,55 @@ body {
   #myBtn {
     right: 7%;
     width: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 0px) {
+  .header-show-logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .social-media {
+    margin: 0;
+    text-align: center;
+  }
+
+  .navbar_proj {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-order-1 {
+    order: 1
+  }
+
+  .flex-order-2 {
+    order: 2;
+  }
+
+  .flex-order-3 {
+    order: 3;
+  }
+
+  .social-media {
+    margin-bottom: 50px;
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .side_text {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .bottom_imgs {
+    margin-left: 0px;
+    height: 17vw;
+    width: 100vw;
+    max-height: 125px;
   }
 }
