@@ -63,6 +63,17 @@ a {
   justify-content: space-between;
 }
 
+.navbar_proj_header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .body {
   align-items: center;
   text-align: center;
@@ -699,10 +710,6 @@ a {
     font-size: 20px;
   }
 
-  .navbar_proj {
-    display: block;
-  }
-
   .col {
     text-align: center;
   }
@@ -935,6 +942,14 @@ a {
   .navbar_proj {
     display: flex;
     flex-direction: column;
+  }
+
+  .navbar_proj_header {
+    display: block !important;
+  }
+
+  .header_logo{
+    width: auto;
   }
 
   .social_media--logo{
