@@ -237,7 +237,8 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
-.large_btn--wrapper:hover {
+.large_btn--wrapper:hover,
+.blue_btn_wrapper:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
 }
@@ -319,6 +320,10 @@ a {
 
 .icon_plus {
   margin-top: -2%;
+  cursor: pointer;
+}
+
+.logo_gulbenkian{
   cursor: pointer;
 }
 
@@ -573,13 +578,14 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .logo_tech4covid19 {
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: 2;
 }
 
 .social_media--logo {
@@ -830,10 +836,6 @@ a {
     padding-bottom: 10px;
   }
 
-  .blue_btn {
-    /* display: none;*/
-  }
-
   .donate_comp_part {
     display: block;
   }
@@ -852,8 +854,6 @@ a {
   .header-show-logo {
     text-align: center;
     margin: 0 auto;
-
-
   }
 
   .subTitle {
@@ -937,6 +937,10 @@ a {
     flex-direction: column;
   }
 
+  .social_media--logo{
+    margin: 0 20px;
+  }
+
   .social-media-wrapper {
     order: 1
   }
@@ -959,8 +963,10 @@ a {
   }
 
   .side_text {
-    margin: 0 10px;
+    margin: 10px 10px;
     font-size: 16px;
+    display: block;
+    text-align: center;
   }
 
   .bottom_imgs {
@@ -981,18 +987,15 @@ a {
 
 @media screen and (min-width: 1140px) {
 
-
   .social-media-wrapper {
     flex-grow: 1;
   }
 
   .footer-text-wrapper {
     flex-grow: 1;
-
   }
 
   .bottom_imgs_wrapper {
-    flex-grow: 2;
-
+    flex-grow: 2 !important;
   }
 }
