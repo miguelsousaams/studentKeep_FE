@@ -334,7 +334,7 @@ a {
   cursor: pointer;
 }
 
-.logo_gulbenkian{
+.logo_gulbenkian {
   cursor: pointer;
 }
 
@@ -479,6 +479,7 @@ a {
 
 .privacy_points {
   margin: 2% 5%;
+  margin-bottom: calc(30px + 5%);
 }
 
 .privacy_point {
@@ -948,11 +949,11 @@ a {
     display: block !important;
   }
 
-  .header_logo{
+  .header_logo {
     width: auto;
   }
 
-  .social_media--logo{
+  .social_media--logo {
     margin: 0 20px;
   }
 
