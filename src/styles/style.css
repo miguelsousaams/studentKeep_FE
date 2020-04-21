@@ -334,9 +334,18 @@ a {
   cursor: pointer;
 }
 
-.logo_gulbenkian{
+.logo_gulbenkian {
   cursor: pointer;
 }
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.logo-edp {
+  max-height: 130px;
+}
+
 
 .icon_plus:hover {
   transform: scale(1.1);
@@ -479,6 +488,7 @@ a {
 
 .privacy_points {
   margin: 2% 5%;
+  margin-bottom: calc(30px + 5%);
 }
 
 .privacy_point {
@@ -663,6 +673,7 @@ a {
   max-width: 1200px;
   box-shadow: unset;
   transition: all .2s ease-in-out;
+  overflow: auto;
 
 }
 
@@ -932,6 +943,7 @@ a {
   .header-show-logo {
     margin: 0 auto;
     margin-bottom: 20px;
+    width: max-content;
   }
 
   .social-media {
@@ -948,11 +960,11 @@ a {
     display: block !important;
   }
 
-  .header_logo{
+  .header_logo {
     width: auto;
   }
 
-  .social_media--logo{
+  .social_media--logo {
     margin: 0 20px;
   }
 
@@ -1013,4 +1025,17 @@ a {
   .bottom_imgs_wrapper {
     flex-grow: 2 !important;
   }
+}
+
+
+@media screen and (max-width:500px) and (max-height: 730px) {
+  .modal_ajuda {
+    overflow-y: scroll;
+
+  }
+
+  .modal-content_ajuda {
+    width: 100vw;
+  }
+
 }
