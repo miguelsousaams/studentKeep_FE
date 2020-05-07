@@ -64,3 +64,18 @@ window.onclick = function (event) {
     modal.classList.remove("visible");
   }
 }
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    console.log(totalEquipmentsDGESTE)
+
+    var totalEquipmentsDGESTE = JSON.parse(this.responseText).totalEquipmentsDGESTE;
+    document.getElementById("n1").innerHTML = totalEquipmentsDGESTE
+    var totalCertifiedTech = JSON.parse(this.responseText).totalCertifiedTech;
+    document.getElementById("n2").innerHTML = totalCertifiedTech
+
+  }
+};
+xhttp.open("GET", "webuser/api_view.php", true);
+xhttp.send();
