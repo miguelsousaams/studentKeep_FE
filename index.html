@@ -75,16 +75,15 @@
       <div class="inicio">
         <span class="title">Student Keep</span>
         <p class="subTitle">
-          Tens um computador a mais? Ajuda um aluno que não tenha acesso a computador ou internet, dando-lhe uma
-          oportunidade para acompanhar melhor as aulas de ensino à distância.
-        </p>
+          Tens um computador a mais? Ajuda um aluno que não tem acesso a um computador dando-lhe uma oportunidade para
+          acompanhar melhor as aulas de ensino à distância.</p>
         <p class="subTitle">
           Torna-te num Keeper! Faz a Educação ir mais longe!
         </p>
 
         <div class="select_forms">
           <p class="select_forms-text">
-            Selecciona um dos formulários para começar
+            Seleciona um dos formulários para começar
           </p>
         </div>
 
@@ -121,32 +120,29 @@
             <p class="description--text">
               Como forma de combater o atual surto de COVID-19 em Portugal, todas as escolas foram obrigadas a suspender
               as suas atividades letivas presenciais, obrigando professores e alunos a adaptar-se a um ensino à
-              distância.
-            </p>
+              distância. </p>
             <br />
             <p class="description--text">
-              No entanto, nem todos os alunos têm acesso à internet ou a um computador para acompanharem as atividades
+              No entanto, nem todos os alunos têm acesso a internet ou a um computador para acompanharem as atividades
               propostas pelos professores. No panorama atual, enquanto o ensino à distância permanecer como o principal
               meio de comunicação entre professores e alunos, haverá um agravamento da desigualdade no acesso à
-              Educação.
-            </p>
+              Educação. </p>
             <br />
             <p class="description--text">
-              O projeto Student Keep pretende solucionar este problema, através de umsistema de apadrinhamento. A ação
-              do projeto consiste na angariação deequipamento informático e posterior doação a alunos sem acesso a
-              computadorou a Internet. </p>
+              O projeto Student Keep pretende solucionar este problema, através de um sistema de apadrinhamento. A ação
+              do projeto consiste na angariação de equipamento informático e posterior doação a alunos sem acesso a
+              computador.</p>
             <br />
             <p class="description--text">
               Para tal, são identificados Keepers, padrinhos, que podem ser pessoas individuais ou coletivas,
-              disponíveis
-              para doar equipamento informático. A entrega do material angariado será feita em articulação com os
-              Agrupamentos Escolares.</p>
+              disponíveis para doar equipamento informático. A entrega do material angariado será feita em articulação
+              com os Agrupamentos Escolares.</p>
 
           </div>
 
-          <div class="numeros_total" style="display: none;">
-            Já conseguimos angariar <span class="numero">X</span> equipamentos
-            informáticos.
+          <div class="numeros_total">
+            Já conseguimos entregar <span class=" numero" id="n1">X</span> equipamentos
+            informáticos e contamos com a ajuda de <span class="numero" id="n2">X</span> voluntários de IT!
             <p>Obrigado.</p>
           </div>
         </div>
@@ -250,70 +246,101 @@
               <p class="description--text">
                 <b> Parceiros principais:</b>
               </p>
-              <div class="main logos"><img class="apoios_primary_images cursor_pointer"
-                  src="src/png/logo_gulbenkian.png" onclick="openUrl('https:\/\/gulbenkian.pt')" /> <!-- https:/// -->
-              </div>
+              <div class="main logos d-flex flex-column w-auto">
+                <a href="https://gulbenkian.pt/" target="_blank">
+                  <img class="apoios_primary_images cursor_pointer" src="src/png/logo_gulbenkian.png" />
 
-            </div>
-            <div class="secondary logos">
-              <a href="https://www.santanderconsumer.pt/" target="_blank">
-                <img class="apoios_primary_images cursor_pointer" src="src/svg/logo_santander.svg">
-              </a>
-            </div>
-            <div class="tertiary logos">
-              <p class="description--text margin-top-80">
-                <b> Apoios:</b>
-              </p>
-              <div class="align-items-center">
-                <a href="https://www.edp.com/pt-pt/?utm_source=covidpt&utm_medium=pagina-parceiros&utm_campaign=parceria-voluntariado"
-                  target="_blank" class="col-sm-12 col">
-                  <img class="apoios_primary_images cursor_pointer logo-edp" src="src/png/logo_edp.png">
                 </a>
-                <a class="col-sm-12 col" href="https://www.fundacaovva.org/" target="_blank">
-                  <img class="apoios_primary_images cursor_pointer" src="src/png/logo_fundacaovva.png">
+                <a href="https://www.santanderconsumer.pt/" target="_blank">
+                  <img class="apoios_primary_images cursor_pointer" src="src/svg/logo_santander.svg">
                 </a>
-                <a class="col-sm-12 col"
-                  href="https://pt.primaverabss.com/pt/pagina/livro-infantil-salvador-o-pequeno-heroi/" target="_blank">
-                  <img class="apoios_primary_images cursor_pointer" src="src/png/logo_primavera.png">
+                <a href="https://www.slbenfica.pt/pt-pt" target="_blank">
+                  <img class="apoios_primary_images cursor_pointer" src="src/png/logo_fundacaobenfica.png" />
+                  <!-- https:/// -->
+
                 </a>
+
+              </div>
+              <div class="secondary logos">
+
+              </div>
+              <div class="tertiary logos">
+                <p class="description--text margin-top-80">
+                  <b> Apoios:</b>
+                </p>
+                <div class="align-items-center">
+                  <div class="row">
+                    <a href="https://www.edp.com/pt-pt/?utm_source=covidpt&utm_medium=pagina-parceiros&utm_campaign=parceria-voluntariado"
+                      target="_blank" class="col">
+                      <img class="apoios_secondary_images cursor_pointer logo-edp" src="src/png/logo_edp.png">
+                    </a>
+                    <a class="col" href="https://www.fundacaovva.org/" target="_blank">
+                      <img class="apoios_secondary_images cursor_pointer" src="src/png/logo_fundacaovva.png">
+                    </a>
+                    <a class="col" href="https://pt.primaverabss.com/pt/pagina/livro-infantil-salvador-o-pequeno-heroi/"
+                      target="_blank">
+                      <img class="apoios_secondary_images cursor_pointer" src="src/png/logo_primavera.png">
+                    </a>
+
+                  </div>
+                  <div class="row">
+                    <a class="col" href="https://integer.pt/pt/" target="_blank">
+                      <img class="apoios_secondary_images cursor_pointer" src="src/png/logo_integer.png">
+                    </a>
+                    <a class="col" href="https://www.seetickets.com/" target="_blank">
+                      <img class="apoios_secondary_images cursor_pointer" src="src/png/logo_see_tickets.png">
+                    </a>
+                    <a class="col" href="https://www.ipn.pt/" target="_blank">
+                      <img class="apoios_secondary_images cursor_pointer" src="src/png/logo_ipn.png">
+                    </a>
+                  </div>
+                  <div class="row">
+                    <a class="col" href="https://beta-i.com/" target="_blank">
+                      <img class="apoios_secondary_images cursor_pointer" src="src/png/logo_betai.png">
+                    </a>
+                    <a class="col" href="https://www.cm-pontadelgada.pt/" target="_blank">
+                      <img class="apoios_secondary_images cursor_pointer" src="src/png/logo_cmpd.png">
+                    </a>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <div class=" footer footer_desktop">
-      <div class="navbar_proj">
-        <div class="col social-media-wrapper">
-          <div class="social-media">
-            <img src="src/svg/Facebook.svg" class="social_media--logo"
-              onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')" />
-            <img src="src/svg/Instagram.svg" class="social_media--logo"
-              onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')" />
-            <img src="src/svg/Linkedin.svg" class="social_media--logo"
-              onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')" />
+      <!-- Footer -->
+      <div class=" footer footer_desktop">
+        <div class="navbar_proj">
+          <div class="col social-media-wrapper">
+            <div class="social-media">
+              <img src="src/svg/Facebook.svg" class="social_media--logo"
+                onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')" />
+              <img src="src/svg/Instagram.svg" class="social_media--logo"
+                onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')" />
+              <img src="src/svg/Linkedin.svg" class="social_media--logo"
+                onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')" />
+            </div>
           </div>
-        </div>
-        <div class="col bottom_imgs_wrapper">
-          <div class="bottom_imgs">
-            <img src="src/svg/logo_tech4covid19.svg" class="logo_footer logo_tech4covid19"
-              onclick="openUrl('https:\/\/tech4covid19.org/')" />
-            <img src="src/svg/logo_alphacoimbra.svg" class="logo_footer logo_alphacoimbra"
-              onclick="openUrl('http:\/\/alphacoimbra.com/')" />
+          <div class="col bottom_imgs_wrapper">
+            <div class="bottom_imgs">
+              <img src="src/svg/logo_tech4covid19.svg" class="logo_footer logo_tech4covid19"
+                onclick="openUrl('https:\/\/tech4covid19.org/')" />
+              <img src="src/svg/logo_alphacoimbra.svg" class="logo_footer logo_alphacoimbra"
+                onclick="openUrl('http:\/\/alphacoimbra.com/')" />
+            </div>
           </div>
-        </div>
-        <div class="col footer-text-wrapper">
-          <div class="footer-text">
-            <a href="views/termosEcondicoes.html" class="side_text">Termos e condições</a>
-            <a href="views/politicaPrivacidade.html" class="side_text">Política de privacidade</a>
+          <div class="col footer-text-wrapper">
+            <div class="footer-text">
+              <a href="views/termosEcondicoes.html" class="side_text">Termos e condições</a>
+              <a href="views/politicaPrivacidade.html" class="side_text">Política de privacidade</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>

@@ -15,9 +15,6 @@ body {
   width: max-content
 }
 
-.margin-top-80 {
-  margin-top: 80px;
-}
 
 /*----------  FONTS  ----------*/
 
@@ -150,7 +147,14 @@ a {
 }
 
 .apoios_primary_images {
-  max-width: 100%;
+  width: 100%;
+  margin: 30px 0;
+  max-width: 350px;
+}
+
+
+.apoios_secondary_images {
+  max-width: 200px;
   margin: 30px 0;
 }
 
@@ -930,9 +934,6 @@ a {
 }
 
 @media screen and (max-width: 1140px) and (min-width: 0px) {
-  .logo-edp {
-    max-height: 20vw;
-  }
 
   .navigation-nav {
     flex-direction: column;
