@@ -147,7 +147,14 @@ a {
 }
 
 .apoios_primary_images {
-  max-width: 100%;
+  width: 100%;
+  margin: 30px 0;
+  max-width: 350px;
+}
+
+
+.apoios_secondary_images {
+  max-width: 200px;
   margin: 30px 0;
 }
 
