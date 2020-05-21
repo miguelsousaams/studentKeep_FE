@@ -835,15 +835,6 @@ a {
     .social_media--logo {
         margin: 0 20px;
     }
-    .social-media-wrapper {
-        order: 1
-    }
-    .footer-text-wrapper {
-        order: 2;
-    }
-    .bottom_imgs_wrapper {
-        order: 3;
-    }
     .social-media {
         margin-bottom: 50px;
     }
@@ -869,18 +860,6 @@ a {
         padding: 0;
         justify-content: center;
         text-align: center
-    }
-}
-
-@media screen and (min-width: 1140px) {
-    .social-media-wrapper {
-        flex-grow: 1;
-    }
-    .footer-text-wrapper {
-        flex-grow: 1;
-    }
-    .bottom_imgs_wrapper {
-        flex-grow: 2 !important;
     }
 }
 
