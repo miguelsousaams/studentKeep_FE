@@ -51,7 +51,13 @@
     <!-- Header -->
     <nav class="header navbar navbar-light navbar-expand-lg">
       <div>
-        <img src="src/svg/logo_studentkeep.svg" class="header_logo" />
+        <a href="/" title="Início">
+          <picture>
+            <source srcset="src/png/logo_studentkeep_xs.png" media="(max-width: 340px)">
+            <source srcset="src/png/logo_studentkeep_sm.png" media="(max-width: 576px)">
+            <img src="src/png/logo_studentkeep.png" alt="Student Keep" />
+          </picture>
+        </a>
       </div>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#contentId"
