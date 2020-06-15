@@ -1,245 +1,265 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Student Keep</title>
-  <link rel="shortcut icon" type="image/x-icon" href="../src/icons/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="../src/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="../src/styles/style.css" />
+  <head>
+    <title>Student Keep</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../src/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../src/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/styles/style.css" />
 
-  <script src="../src/js/jquery-3.5.1.slim.min.js"></script>
-  <script src="../src/js/bootstrap.min.js"></script>
+    <script src="../src/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../src/js/bootstrap.min.js"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Ubuntu:700&display=swap" rel="stylesheet" />
-  <!--Meta tags-->
-  <!-- Facebook -->
-  <meta property="og:title" content="Student Keep" />
-  <meta property="og:description"
-    content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
-  <meta property="og:image" content="https://studentkeep.org/src/jpg/image_og.jpg" />
-  <meta property="og:url" content="https://studentkeep.org" />
-  <meta property="og:type" content="website" />
-  <!-- Twitter -->
-  <meta name="twitter:title" content="Student Keep" />
-  <meta name="twitter:description"
-    content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
-  <meta name="twitter:image" content="https://studentkeep.org/src/jpg/image_og.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Other -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
-  <meta name="keywords" content="studentKeep, tech4covid19, students, alunos, covid19" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N0Z2DTDPP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Ubuntu:700&display=swap" rel="stylesheet" />
+    <!--Meta tags-->
+    <!-- Facebook -->
+    <meta property="og:title" content="Student Keep" />
+    <meta property="og:description"
+          content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
+    <meta property="og:image" content="https://studentkeep.org/src/jpg/image_og.jpg" />
+    <meta property="og:url" content="https://studentkeep.org" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Student Keep" />
+    <meta name="twitter:description"
+          content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
+    <meta name="twitter:image" content="https://studentkeep.org/src/jpg/image_og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Other -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+          content="Projeto @tech4covid19 para combater o problema da desigualdade no acesso à Educação, agravado pela suspensão das aulas presenciais devido à Covid-19." />
+    <meta name="keywords" content="studentKeep, tech4covid19, students, alunos, covid19" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N0Z2DTDPP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-4N0Z2DTDPP");
-  </script>
-</head>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4N0Z2DTDPP");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TKN4RCG');</script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<body class="termos_body">
-  <div class="app">
-    <img src="../src/svg/icon_arrow_backtotop.svg" onclick="topFunction()" id="myBtn" title="Go to top" />
+  <body class="termos_body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKN4RCG" height="0" width="0"
+              style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="app">
+      <img src="../src/svg/icon_arrow_backtotop.svg" onclick="topFunction()" id="myBtn" title="Go to top" />
 
-    <!-- Header -->
-    <nav class="header navbar navbar-light navbar-expand-lg">
-      <div>
-        <a href="/" title="Início">
-          <picture>
-            <source srcset="../src/png/logo_studentkeep_xs.png" media="(max-width: 340px)">
-            <source srcset="../src/png/logo_studentkeep_sm.png" media="(max-width: 576px)">
-            <img src="../src/png/logo_studentkeep.png" alt="Student Keep" />
-          </picture>
-        </a>
-      </div>
+      <!-- Header -->
+      <nav class="header navbar navbar-light navbar-expand-lg">
+        <div>
+          <a href="/" title="Início">
+            <picture>
+              <source srcset="../src/png/logo_studentkeep_xs.png" media="(max-width: 340px)">
+              <source srcset="../src/png/logo_studentkeep_sm.png" media="(max-width: 576px)">
+              <img src="../src/png/logo_studentkeep.png" alt="Student Keep" />
+            </picture>
+          </a>
+        </div>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#contentId"
-        aria-controls="contentId" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#contentId"
+                aria-controls="contentId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="contentId">
-        <div class="page_sections">
-          <ul class="navbar-nav align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#ajuda">Preciso de ajuda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#apoios">Apoios</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary" href="../index.html#juntate">Junta-te à equipa!</a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse" id="contentId">
+          <div class="page_sections">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#ajuda">Preciso de ajuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#apoios">Apoios</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary" href="../index.html#juntate">Junta-te à equipa!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Path -->
+      <div class="path">
+        <div class="blue_btn_ctr">
+          <a class="blue_btn_path" href="../index.html">Página Inicial</a>
+        </div>
+        <img class="left_arrow" src="../src/svg/icon_arrow_left.svg" />
+        <div class="green_btn_ctr">
+          <a class="green_btn_path" href="termosEcondicoes.html">Termos e Condições</a>
         </div>
       </div>
-    </nav>
 
-    <!-- Path -->
-    <div class="path">
-      <div class="blue_btn_ctr">
-        <a class="blue_btn_path" href="../index.html">Página Inicial</a>
-      </div>
-      <img class="left_arrow" src="../src/svg/icon_arrow_left.svg" />
-      <div class="green_btn_ctr">
-        <a class="green_btn_path" href="termosEcondicoes.html">Termos e Condições</a>
+      <!-- Body -->
+      <div class="body">
+        <!-- Privacy -->
+        <div class="privacy_area">
+          <span class="title_yellow">Termos e Condições</span>
+          <hr class="yellow_hr" />
+
+          <div class="privacy">
+            <p class="privacy_header">
+              Termos e Condições
+            </p>
+            <p class="privacy_text">
+              Os presentes termos e condições visam regular os projectos da STUDENT KEEP, denominados Apoio com
+              Equipamento Informático, EMPRESAS - Apoio com Equipamento Informático e Voluntário Student Keep.
+            </p>
+            <div class="privacy_points">
+              <p class="bold_number">A - Apoio com Equipamento Informático:</p>
+              <p class="privacy_point">
+                <span class="bold_number">1.</span> Este projecto visa as Pessoas Individuais que pretendem ceder, a
+                título gratuito, mediante Doação, algum equipamento que seja necessário ao cumprimento dos objectivos
+                deste Site.
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">2.</span> Terão de ser preenchidos os dados pessoais solicitados no respectivo
+                formulário, tudo conforme a Política de Privacidade que pode ser acedida <a
+                   href="https://studentkeep.org/views/politicaPrivacidade.html">aqui</a>.
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">3.</span> A Pessoa Individual que ceder qualquer equipamento, transmitirá
+                ainda
+                todos os direitos inerentes à sua propriedade, não podendo posteriormente arrogar qualquer direito sobre
+                ele.
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">4.</span> A Doação do equipamento é feita no estado em que se encontrar na
+                data
+                da entrega, não sendo exigível à Pessoa Individual qualquer alteração ao mesmo, designadamente,
+                melhoramentos ou reparações. </p>
+
+              <p class="privacy_point">
+                <span class="bold_number">5.</span> Todos os equipamentos doados serão entregues ao Ministério da
+                Educação que, em conjunto com as Escolas, os irá ceder aos Alunos que deles necessitem.
+
+              </p>
+
+            </div>
+            <div class="privacy_points">
+              <p class="bold_number">B - EMPRESAS - Apoio com Equipamento Informático:</p>
+              <p class="privacy_point">
+                <span class="bold_number">1.</span> Este projecto visa as Pessoas Colectivas que pretendem ceder, a
+                título
+                gratuito, mediante Doação, algum equipamento que seja necessário ao cumprimento dos objectivos deste
+                Site.
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">2.</span> A Pessoa Colectiva que ceder qualquer equipamento, transmitirá ainda
+                todos os direitos inerentes à sua propriedade, não podendo posteriormente arrogar qualquer direito sobre
+                ele.
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">3.</span> A Doação do equipamento é feita no estado em que se encontrar na
+                data
+                da entrega, não sendo exigível à Pessoa Colectiva qualquer alteração ao mesmo, designadamente,
+                melhoramentos ou reparações.
+
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">4.</span> Todos os equipamentos doados serão entregues ao Ministério da
+                Educação
+                que, em conjunto com as Escolas, os irá ceder aos Alunos que deles necessitem.
+              </p>
+            </div>
+            <div class="privacy_points">
+              <p class="bold_number">C - Voluntário Student Keep:
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">1.</span> Podem ser voluntários, para este efeito, todos os profissionais com
+                conhecimentos em IT, configuração de PC, manutenção de equipamento e apoio técnico remoto.
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">2.</span> Terão de ser preenchidos os dados pessoais solicitados no respectivo
+                formulário, tudo conforme a Política de Privacidade que pode ser acedida <a
+                   href="https://studentkeep.org/views/politicaPrivacidade.html">aqui</a>.
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">3.</span> Ao preencher o formulário, o Voluntário compromete-se a responder a
+                todas as solicitações aos seus serviços, que tenham por objecto qualquer equipamento que seja utilizado
+                para o ensino à distância.
+
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">4.</span>Qualquer serviço prestado, no âmbito deste projecto, é a título
+                gratuito.
+
+              </p>
+              <p class="privacy_point">
+                <span class="bold_number">5.</span>O Contrato de Voluntariado é celebrado entre o Voluntário e o
+                Beneficiário, sendo a STUDENT KEEP mero intermediário.
+
+
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Body -->
-    <div class="body">
-      <!-- Privacy -->
-      <div class="privacy_area">
-        <span class="title_yellow">Termos e Condições</span>
-        <hr class="yellow_hr" />
-
-        <div class="privacy">
-          <p class="privacy_header">
-            Termos e Condições
-          </p>
-          <p class="privacy_text">
-            Os presentes termos e condições visam regular os projectos da STUDENT KEEP, denominados Apoio com
-            Equipamento Informático, EMPRESAS - Apoio com Equipamento Informático e Voluntário Student Keep.
-          </p>
-          <div class="privacy_points">
-            <p class="bold_number">A - Apoio com Equipamento Informático:</p>
-            <p class="privacy_point">
-              <span class="bold_number">1.</span> Este projecto visa as Pessoas Individuais que pretendem ceder, a
-              título gratuito, mediante Doação, algum equipamento que seja necessário ao cumprimento dos objectivos
-              deste Site.
-
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">2.</span> Terão de ser preenchidos os dados pessoais solicitados no respectivo
-              formulário, tudo conforme a Política de Privacidade que pode ser acedida <a
-                href="https://studentkeep.org/views/politicaPrivacidade.html">aqui</a>.
-
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">3.</span> A Pessoa Individual que ceder qualquer equipamento, transmitirá ainda
-              todos os direitos inerentes à sua propriedade, não podendo posteriormente arrogar qualquer direito sobre
-              ele.
-
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">4.</span> A Doação do equipamento é feita no estado em que se encontrar na data
-              da entrega, não sendo exigível à Pessoa Individual qualquer alteração ao mesmo, designadamente,
-              melhoramentos ou reparações. </p>
-
-            <p class="privacy_point">
-              <span class="bold_number">5.</span> Todos os equipamentos doados serão entregues ao Ministério da
-              Educação que, em conjunto com as Escolas, os irá ceder aos Alunos que deles necessitem.
-
-            </p>
-
+    <!-- Footer -->
+    <div class="footer footer_desktop">
+      <div class="d-flex flex-column flex-lg-row align-items-center flex-lg-wrap justify-content-lg-between">
+        <div class="col-12 col-lg-3 order-1">
+          <div class="social-media">
+            <img src="../src/svg/Facebook.svg" class="social_media--logo"
+                 onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')" />
+            <img src="../src/svg/Instagram.svg" class="social_media--logo"
+                 onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')" />
+            <img src="../src/svg/Linkedin.svg" class="social_media--logo"
+                 onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')" />
           </div>
-          <div class="privacy_points">
-            <p class="bold_number">B - EMPRESAS - Apoio com Equipamento Informático:</p>
-            <p class="privacy_point">
-              <span class="bold_number">1.</span> Este projecto visa as Pessoas Colectivas que pretendem ceder, a título
-              gratuito, mediante Doação, algum equipamento que seja necessário ao cumprimento dos objectivos deste Site.
+        </div>
 
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">2.</span> A Pessoa Colectiva que ceder qualquer equipamento, transmitirá ainda
-              todos os direitos inerentes à sua propriedade, não podendo posteriormente arrogar qualquer direito sobre
-              ele.
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">3.</span> A Doação do equipamento é feita no estado em que se encontrar na data
-              da entrega, não sendo exigível à Pessoa Colectiva qualquer alteração ao mesmo, designadamente,
-              melhoramentos ou reparações.
-
-
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">4.</span> Todos os equipamentos doados serão entregues ao Ministério da Educação
-              que, em conjunto com as Escolas, os irá ceder aos Alunos que deles necessitem.
-            </p>
+        <div class="col-12 col-lg-6 flex-grow-1 order-3 order-lg-2">
+          <div class="bottom_imgs">
+            <img src="../src/svg/logo_tech4covid19.svg" class="logo_footer logo_tech4covid19"
+                 onclick="openUrl('https:\/\/tech4covid19.org/')" />
+            <img src="../src/svg/logo_alphacoimbra.svg" class="logo_footer logo_alphacoimbra"
+                 onclick="openUrl('http:\/\/alphacoimbra.com/')" />
           </div>
-          <div class="privacy_points">
-            <p class="bold_number">C - Voluntário Student Keep:
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">1.</span> Podem ser voluntários, para este efeito, todos os profissionais com
-              conhecimentos em IT, configuração de PC, manutenção de equipamento e apoio técnico remoto.
+        </div>
 
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">2.</span> Terão de ser preenchidos os dados pessoais solicitados no respectivo
-              formulário, tudo conforme a Política de Privacidade que pode ser acedida <a
-                href="https://studentkeep.org/views/politicaPrivacidade.html">aqui</a>.
-
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">3.</span> Ao preencher o formulário, o Voluntário compromete-se a responder a
-              todas as solicitações aos seus serviços, que tenham por objecto qualquer equipamento que seja utilizado
-              para o ensino à distância.
-
-
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">4.</span>Qualquer serviço prestado, no âmbito deste projecto, é a título
-              gratuito.
-
-            </p>
-            <p class="privacy_point">
-              <span class="bold_number">5.</span>O Contrato de Voluntariado é celebrado entre o Voluntário e o
-              Beneficiário, sendo a STUDENT KEEP mero intermediário.
-
-
-            </p>
+        <div class="col-12 col-lg-3 order-2 order-lg-3">
+          <div class="footer-text">
+            <a href="termosEcondicoes.html" class="side_text">Termos e condições</a>
+            <a href="politicaPrivacidade.html" class="side_text">Política de privacidade</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer footer_desktop">
-    <div class="d-flex flex-column flex-lg-row align-items-center flex-lg-wrap justify-content-lg-between">
-      <div class="col-12 col-lg-3 order-1">
-        <div class="social-media">
-          <img src="../src/svg/Facebook.svg" class="social_media--logo"
-            onclick="openUrl('https:\/\/www.facebook.com/studentkeep/')" />
-          <img src="../src/svg/Instagram.svg" class="social_media--logo"
-            onclick="openUrl('https:\/\/www.instagram.com/studentkeep/')" />
-          <img src="../src/svg/Linkedin.svg" class="social_media--logo"
-            onclick="openUrl('http:\/\/linkedin.com/company/student-keep/')" />
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6 flex-grow-1 order-3 order-lg-2">
-        <div class="bottom_imgs">
-          <img src="../src/svg/logo_tech4covid19.svg" class="logo_footer logo_tech4covid19"
-            onclick="openUrl('https:\/\/tech4covid19.org/')" />
-          <img src="../src/svg/logo_alphacoimbra.svg" class="logo_footer logo_alphacoimbra"
-            onclick="openUrl('http:\/\/alphacoimbra.com/')" />
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-3 order-2 order-lg-3">
-        <div class="footer-text">
-          <a href="termosEcondicoes.html" class="side_text">Termos e condições</a>
-          <a href="politicaPrivacidade.html" class="side_text">Política de privacidade</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="../src/js/script.js"></script>
-</body>
+    <script src="../src/js/script.js"></script>
+  </body>
 
 </html>
