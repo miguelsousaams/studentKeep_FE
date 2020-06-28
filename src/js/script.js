@@ -79,3 +79,7 @@ xhttp.onreadystatechange = function () {
 };
 xhttp.open("GET", "webuser/api_view.php", true);
 xhttp.send();
+
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
